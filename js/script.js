@@ -4,12 +4,12 @@
   videos.forEach(video => {
     video.addEventListener('mouseover', () => {
       video.play();
-      video.setAttribute('controls', 'controls')
+     
     });
   
     video.addEventListener('mouseout', () => {
       video.pause();
-      video.removeAttribute('controls')
+      
     });
   });
  
