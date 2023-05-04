@@ -572,6 +572,7 @@ video {
     margin-top: 150px;
 }
 
+
 .clients__body {
     margin-top: 50px;
     display: grid;
@@ -583,6 +584,12 @@ video {
         ". . . . ."
         ". . . . ."
         ". . . . ."
+}
+
+.tete {
+    margin-top: -25px;
+    display: flex;
+    justify-content: center;
 }
 
 .clients__block {
@@ -598,6 +605,9 @@ video {
     transition: all .3s ease;
 }
 
+.trap {
+    display: none;
+}
 
 .clients__block:nth-child(3) {
     padding-left: 30px;
@@ -693,6 +703,14 @@ footer span {
             ". . . ."
             ". . . ."
             ". . . ."
+    }
+
+    .tete {
+        display: none !important;
+    }
+
+    .trap {
+        display: flex;
     }
 }
 

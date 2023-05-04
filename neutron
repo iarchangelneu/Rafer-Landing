@@ -1,0 +1,10 @@
+server {
+    listen   3000;
+    server_name  neutron-agency.com wwww.neutron-agency.com;
+    location / {
+        root /home/survey/flask-vuejs-survey/frontend/survey-spa/dist;
+	try_files $uri $uri/ /index.html;
+        proxy_pass http://0.0.0.0:3000;
+        include /etc/nginx/proxy_params;
+    }
+}
