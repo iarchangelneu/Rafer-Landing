@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAFER - Творческое Объединение</title>
+    <link rel="shortcut icon" href="./img/favico.png">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container__raffer">
+
+        <!-- HEADER -->
+
+        <header>
+            <div class="pc__header">
+                <div class="d-flex justify-content-between align-items-center">
+
+                    <img src="./img/logo.svg" alt="">
+
+                    <div class="d-flex align-items-center">
+                        <a href="#services">УСЛУГИ</a>
+                        <a href="#projects">ПРОЕКТЫ</a>
+                        <a href="#contacts">КОНТАКТЫ</a>
+                        <a href="tel:+77052390170">
+                            <span>+</span>
+                            7 705 239 01 70
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile__header">
+                <div class="d-flex justify-content-between align-items-center pb-3">
+                    <img src="./img/logomob.svg" class="pt-4" alt="">
+                    <a href="tel:+7 705 239 01 70" class="pt-4">
+                        <span>+</span>
+                        7 705 239 01 70
+                    </a>
+                    <div>
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                            <span></span>
+                        </label>
+
+                        <ul class="menu__box">
+                            <div class="menu__links">
+                                <a href="#projects">ПРОЕКТЫ</a>
+                                <a href="#services">УСЛУГИ</a>
+                            </div>
+                            <div class="menu__contacts">
+                                <h4 class="mb-4">Контакты</h4>
+
+                                <div class="d-flex align-items-center helink">
+                                    <img src="./img/wsap.png" alt="">
+                                    <a href="tel:+">+7 705 239 01 70</a>
+                                </div>
+
+                                <div class="d-flex align-items-center helink">
+                                    <img src="./img/ml.png" alt="">
+                                    <a href="mailto:">info@rafer.kz</a>
+                                </div>
+
+                                <div class="d-flex align-items-center helink">
+                                    <img src="./img/in.png" alt="">
+                                    <a href="https://www.instagram.com/rafer.media/">rafer.media</a>
+                                </div>
+
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- END HEADER -->
+
+
+        <!-- MAIN -->
+
+        <main>
+            <div class="main">
+
+                <div class="d-flex align-items-start justify-content-between">
+
+                    <div class="main__left">
+                        <img src="./img/mainleft.png" alt="">
+                    </div>
+
+                    <div class="main__right">
+
+                        <h1>Cоздаем видео для бизнеса <br>
+                            <span> и не только</span>
+                        </h1>
+                        <a href="#contacts">
+                            <div class="main__right__contact text-right">
+                                <img src="./img/mainright.png" alt="">
+                                <img src="./img/rotatetext.png" class="rotateText" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="showreal">
+                <h1>Шоурил</h1>
+
+                <div class="showreal__promo">
+
+                    <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'"
+                        class="promoblock">
+                        <div class="text-center preview">
+                            <img src="./img/play.png" alt="">
+                        </div>
+                    </div>
+
+                    <div style="display:none">
+                        <iframe width="100%" height="530" src="https://www.youtube-nocookie.com/embed/BOkgPo1zyRU"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="services">
+                <div class="text-right">
+                    <a name="services"></a>
+                    <h1>УСЛУГИ</h1>
+                </div>
+
+                <div class="services__body">
+
+                    <div class="d-flex">
+
+                        <div class="services__block select select__active" data-target="block1"
+                            onclick="changeTitle('Рекламные видеоролики')">
+                            <h2 class="text__active">Рекламные видеоролики</h2>
+                            <p class="text__active">Увеличат конверсию, поднимут продажи, улучшат имидж и узнаваемость
+                                бренда</p>
+                        </div>
+
+                        <div class="services__block select" data-target="block2" onclick="changeTitle('2D/3D графика')">
+                            <h2>2D/3D графика</h2>
+                            <p>Анимационные видеоролики</p>
+                        </div>
+
+                        <div class="services__block select" data-target="block3"
+                            onclick="changeTitle('Видео и фото отчеты')">
+                            <h2>Видео и фото отчеты</h2>
+                            <p>Многочасовые и короткие видеоролики мероприятий, конференций, форумов и т.д.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="services__block2 select" data-target="block4"
+                            onclick="changeTitle('Корпоративно-Имиджевые Видеоролики для Бизнеса')">
+                            <h2>Корпоративно-Имиджевые Видеоролики для Бизнеса</h2>
+                            <p>Видеоролик о компании, курсы для обучения сотрудников, презентационные фильмы и т.д.</p>
+                        </div>
+                        <div class="services__block2 select" data-target="block5"
+                            onclick="changeTitle('Контент для соц. сетей (Reels, Shorts, TikTok)')">
+                            <h2>Контент для соц. сетей (Reels, Shorts, TikTok)</h2>
+                            <p>Рилсы, фотосеты, вирусные видеоролики, мобилография</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <a name="projects"></a>
+            <div class="projects">
+                <h1>Проекты</h1>
+                <h2 id="changeme">Рекламные ролики</h2>
+            </div>
+
+            <div class="projects__body">
+                <div class="projects__block video__active" id="block1">
+                    <div class="d-flex">
+
+                        <div class="player">
+                            <div class="player__text">
+                                <h3>Jaqsy PREMIUM</h3>
+                                <p>Реклама</p>
+                            </div>
+                            <video width="664" height="372" loop muted class="pr1_1">
+                                <source src="./videos/jaqsy.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="player">
+                            <div class="player__text">
+                                <h3>chevrolet traverse</h3>
+                                <p>Реклама</p>
+                            </div>
+                            <video width="601" height="372" loop muted class="pr1_2">
+                                <source src="./videos/chev.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="player ">
+                            <div class="player__text">
+                                <h3>chevrolet<br>
+                                    equinox</h3>
+                                <p>Реклама</p>
+                            </div>
+                            <video width="447" height="372" loop muted class="pr1_3">
+                                <source src="./videos/chev2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="player ">
+                            <div class="player__text">
+                                <h3>GhostEnergy</h3>
+                                <p>Реклама</p>
+                            </div>
+                            <video width="485" height="372" loop muted class="pr1_4">
+                                <source src="./videos/ghost.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="player ">
+                            <div class="player__text">
+                                <h3>Leto<br>
+                                    coffee</h3>
+                                <p>Реклама</p>
+                            </div>
+                            <video width="328" height="372" loop muted class="pr1_5">
+                                <source src="./videos/leto.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="projects__block" id="block2">
+
+                    <div class="d-flex">
+
+                        <div>
+                            <div class="player">
+                                <div class="player__text" style="top:5%">
+                                    <h3>yesterday music</h3>
+                                    <p>2d/3d графика</p>
+                                </div>
+                                <video width="664" height="710" loop muted class="pr2_1">
+                                    <source src="./videos/music.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="player">
+                                <div class="player__text">
+                                    <h3>Connected home</h3>
+                                    <p>2d/3d графика</p>
+                                </div>
+                                <video width="601" height="352" loop muted class="pr2_2">
+                                    <source src="./videos/home.mp4" type="video/mp4">
+                                </video>
+                            </div>
+
+                            <div class="player">
+                                <div class="player__text">
+                                    <h3>GhostEnergy</h3>
+                                    <p>2d/3d графика</p>
+                                </div>
+                                <video width="601" height="352" loop muted class="pr2_3">
+                                    <source src="./videos/ghost2.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="projects__block" id="block3">
+
+                    <div class="d-flex">
+
+                        <div>
+                            <div class="player">
+                                <div class="player__text" style="top:5%">
+                                    <h3>ala art residency</h3>
+                                    <p>видео отчет</p>
+                                </div>
+                                <video width="664" height="749" loop muted class="pr3_1">
+                                    <source src="./videos/ala.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="player">
+                                <div class="player__text" style="top:5%">
+                                    <h3>honey skin</h3>
+                                    <p>видео отчет</p>
+                                </div>
+                                <video width="601" height="749" loop muted class="pr3_1">
+                                    <source src="./videos/honey.mp4" type="video/mp4">
+                                </video>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="projects__block" id="block4">
+
+                    <div class="d-flex">
+
+                        <div>
+                            <div class="player">
+                                <div class="player__text" style="top:5%">
+                                    <h3>connected home</h3>
+                                    <p>имиджевый ролик</p>
+                                </div>
+                                <video width="664" height="749" loop muted class="pr3_1">
+                                    <source src="./videos/home2.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="player">
+                                <div class="player__text" style="top:5%">
+                                    <h3>lexus nx</h3>
+                                    <p>имиджевый ролик</p>
+                                </div>
+                                <video width="601" height="749" loop muted class="pr3_2">
+                                    <source src="./videos/lexus.mp4" type="video/mp4">
+                                </video>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="projects__block" id="block5">
+
+                    <div class="d-flex">
+
+                        <div>
+                            <div class="player">
+                                <div class="player__text" style="top:5%">
+                                    <h3>connected home</h3>
+                                    <p>имиджевый ролик</p>
+                                </div>
+                                <video width="664" height="749" loop muted class="pr3_1">
+                                    <source src="./videos/home2.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="player">
+                                <div class="player__text" style="top:5%">
+                                    <h3>lexus nx</h3>
+                                    <p>имиджевый ролик</p>
+                                </div>
+                                <video width="601" height="749" loop muted class="pr3_2">
+                                    <source src="./videos/lexus.mp4" type="video/mp4">
+                                </video>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="clients">
+
+                <div class="text-right">
+                    <h1>Наши клиенты</h1>
+                </div>
+
+                <div class="clients__body">
+                    <div class="clients__block">
+                        <img src="./img/chev2.png" alt="">
+                    </div>
+                    <div class="clients__block">
+                        <img src="./img/beeline.png" alt="">
+                    </div>
+                    <div class="clients__block">
+                        <img src="./img/gg.png" alt="">
+                    </div>
+                    <div class="clients__block">
+                        <img src="./img/lex.png" alt="">
+                    </div>
+                    <div class="clients__block">
+                        <img src="./img/mira.png" alt="">
+                    </div>
+                    <div class="clients__block">
+                        <img src="./img/hal.png" alt="">
+                    </div>
+                    <div class="clients__block">
+                        <img src="./img/efes.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- END MAIN  -->
+
+        <!-- FOOTER  -->
+        <a name="contacts"></a>
+        <footer>
+            <div class="d-flex justify-content-between footerbody">
+                <div class="d-flex align-items-center">
+                    <img src="./img/phone.svg" alt="">
+                    <a href="tel:+77052390170">
+                        <span>+</span>
+                        7 705 239 01 70
+                    </a>
+                </div>
+                <div class="d-flex align-items-center">
+                    <img src="./img/mail.svg" alt="">
+                    <a href="mailto:info@rafer.kz">
+                        info<span>@</span>rafer.kz
+                    </a>
+
+                </div>
+                <div class="d-flex align-items-center">
+                    <img src="./img/insta.svg" alt="">
+                    <a href="https://www.instagram.com/rafer.media/">
+                        rafer.media
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- END FOOTER  -->
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

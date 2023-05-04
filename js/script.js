@@ -1,0 +1,53 @@
+ // Проигрывание видео при наведении
+  const videos = document.querySelectorAll('video');
+
+  videos.forEach(video => {
+    video.addEventListener('mouseover', () => {
+      video.play();
+      video.setAttribute('controls', 'controls')
+    });
+  
+    video.addEventListener('mouseout', () => {
+      video.pause();
+      video.removeAttribute('controls')
+    });
+  });
+ 
+  // Переключение роликов
+const buttons = document.querySelectorAll(".select");
+const blocks = document.querySelectorAll(".projects__block");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+
+    // Удаляем активный класс со всех кнопок
+    buttons.forEach((button) => {
+      button.classList.remove("select__active");
+      button.querySelector('h2').classList.remove('text__active')
+    button.querySelector('p').classList.remove('text__active')
+    });
+    
+    
+
+    // Добавляем активный класс к нажатой кнопке
+    button.classList.add("select__active");
+    button.querySelector('h2').classList.add('text__active')
+    button.querySelector('p').classList.add('text__active')
+
+    // Скрываем все блоки
+    blocks.forEach((block) => {
+      block.classList.remove('video__active')
+    });
+
+    // Показываем блок, связанный с нажатой кнопкой
+    const target = button.dataset.target;
+    const block = document.getElementById(target);
+    block.classList.add('video__active')
+  });
+});
+
+// Меняем титл в блоке "Проекты" при нажатии на блоки
+function changeTitle(text){
+    let title = document.getElementById('changeme')
+    title.innerHTML = text
+}
